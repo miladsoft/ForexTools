@@ -1,0 +1,530 @@
+2019-07-18 10:31:54.440 +00:00 [Information] DNTFrameworkCore.TestAPI.Infrastructure.Context.ProjectDbContext [0] : Migrating database associated with context ProjectDbContext
+2019-07-18 10:31:54.590 +00:00 [Warning] Microsoft.EntityFrameworkCore.Model.Validation [Microsoft.EntityFrameworkCore.Infrastructure.SensitiveDataLoggingEnabledWarning] : Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2019-07-18 10:31:54.620 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:31:55.384 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:32:04.690 +00:00 [Error] Microsoft.EntityFrameworkCore.Database.Connection [Microsoft.EntityFrameworkCore.Database.Connection.ConnectionError] : An error occurred using the connection to database 'DNTFrameworkCoreTestAPI' on server '.\SQLEXPRESS'.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNTFrameworkCoreTestAPI" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\hooshmandsazi@outlook.com'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+ClientConnectionId:9b1458e3-a5b1-49c6-9a84-bf4a504cfc4b
+Error Number:4060,State:1,Class:11
+2019-07-18 10:32:04.832 +00:00 [Error] Microsoft.EntityFrameworkCore.Update [Microsoft.EntityFrameworkCore.Update.SaveChangesFailed] : An exception occurred in the database while saving changes for context type 'DNTFrameworkCore.TestAPI.Infrastructure.Context.ProjectDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNTFrameworkCoreTestAPI" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\hooshmandsazi@outlook.com'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:9b1458e3-a5b1-49c6-9a84-bf4a504cfc4b
+Error Number:4060,State:1,Class:11
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "DNTFrameworkCoreTestAPI" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\hooshmandsazi@outlook.com'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:9b1458e3-a5b1-49c6-9a84-bf4a504cfc4b
+Error Number:4060,State:1,Class:11
+2019-07-18 10:32:05.104 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (131ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE DATABASE [DNTFrameworkCoreTestAPI];
+2019-07-18 10:32:05.154 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [DNTFrameworkCoreTestAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2019-07-18 10:32:05.194 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [dbo].[MigrationHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK_MigrationHistory] PRIMARY KEY ([MigrationId])
+);
+2019-07-18 10:32:05.213 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+SELECT OBJECT_ID(N'[dbo].[MigrationHistory]');
+2019-07-18 10:32:05.222 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+SELECT [MigrationId], [ProductVersion]
+FROM [dbo].[MigrationHistory]
+ORDER BY [MigrationId];
+2019-07-18 10:32:05.227 +00:00 [Information] Microsoft.EntityFrameworkCore.Migrations [Microsoft.EntityFrameworkCore.Migrations.MigrationApplying] : Applying migration '20190704125651_V2019_07_04_1726'.
+2019-07-18 10:32:05.276 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [Blog] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(50) NOT NULL,
+    [NormalizedTitle] nvarchar(50) NOT NULL,
+    [Url] nvarchar(50) NOT NULL,
+    [RowVersion] rowversion NULL,
+    [CreationDateTime] datetimeoffset NOT NULL,
+    [CreatorBrowserName] nvarchar(1024) NULL,
+    [CreatorIp] nvarchar(256) NULL,
+    [CreatorUserId] bigint NULL,
+    [ModificationDateTime] datetimeoffset NULL,
+    [ModifierBrowserName] nvarchar(1024) NULL,
+    [ModifierIp] nvarchar(256) NULL,
+    [ModifierUserId] bigint NULL,
+    CONSTRAINT [PK_Blog] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.284 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [NumberedEntity] (
+    [Id] int NOT NULL IDENTITY,
+    [EntityName] varchar(256) NOT NULL,
+    [NextNumber] bigint NOT NULL,
+    CONSTRAINT [PK_NumberedEntity] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.292 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [Role] (
+    [Id] bigint NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [NormalizedName] nvarchar(50) NOT NULL,
+    [Description] nvarchar(1024) NULL,
+    [RowVersion] rowversion NULL,
+    [CreationDateTime] datetimeoffset NOT NULL,
+    [CreatorBrowserName] nvarchar(1024) NULL,
+    [CreatorIp] nvarchar(256) NULL,
+    [CreatorUserId] bigint NULL,
+    [ModificationDateTime] datetimeoffset NULL,
+    [ModifierBrowserName] nvarchar(1024) NULL,
+    [ModifierIp] nvarchar(256) NULL,
+    [ModifierUserId] bigint NULL,
+    CONSTRAINT [PK_Role] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.299 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [Task] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(256) NOT NULL,
+    [NormalizedTitle] nvarchar(256) NOT NULL,
+    [Number] nvarchar(50) NOT NULL,
+    [Description] nvarchar(1024) NULL,
+    [State] tinyint NOT NULL,
+    [RowVersion] rowversion NULL,
+    [BranchId] bigint NOT NULL,
+    [CreationDateTime] datetimeoffset NOT NULL,
+    [CreatorBrowserName] nvarchar(1024) NULL,
+    [CreatorIp] nvarchar(256) NULL,
+    [CreatorUserId] bigint NULL,
+    [ModificationDateTime] datetimeoffset NULL,
+    [ModifierBrowserName] nvarchar(1024) NULL,
+    [ModifierIp] nvarchar(256) NULL,
+    [ModifierUserId] bigint NULL,
+    CONSTRAINT [PK_Task] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.306 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [User] (
+    [Id] bigint NOT NULL IDENTITY,
+    [UserName] nvarchar(256) NOT NULL,
+    [NormalizedUserName] nvarchar(256) NOT NULL,
+    [DisplayName] nvarchar(50) NOT NULL,
+    [NormalizedDisplayName] nvarchar(50) NOT NULL,
+    [PasswordHash] nvarchar(256) NOT NULL,
+    [IsActive] bit NOT NULL,
+    [LastLoggedInDateTime] datetimeoffset NULL,
+    [RowVersion] rowversion NULL,
+    [SerialNumber] nvarchar(128) NOT NULL,
+    [CreationDateTime] datetimeoffset NOT NULL,
+    [CreatorBrowserName] nvarchar(1024) NULL,
+    [CreatorIp] nvarchar(256) NULL,
+    [CreatorUserId] bigint NULL,
+    [ModificationDateTime] datetimeoffset NULL,
+    [ModifierBrowserName] nvarchar(1024) NULL,
+    [ModifierIp] nvarchar(256) NULL,
+    [ModifierUserId] bigint NULL,
+    CONSTRAINT [PK_User] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.314 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [dbo].[Cache] (
+    [Id] nvarchar(449) NOT NULL,
+    [Value] varbinary(max) NOT NULL,
+    [ExpiresAtTime] datetimeoffset NOT NULL,
+    [SlidingExpirationInSeconds] bigint NULL,
+    [AbsoluteExpiration] datetimeoffset NULL,
+    CONSTRAINT [PK_Cache] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.322 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [dbo].[Log] (
+    [Id] uniqueidentifier NOT NULL,
+    [Message] nvarchar(max) NOT NULL,
+    [Level] nvarchar(50) NOT NULL,
+    [Timestamp] datetimeoffset NOT NULL,
+    [LoggerName] nvarchar(256) NOT NULL,
+    [UserBrowserName] nvarchar(1024) NULL,
+    [UserIP] nvarchar(256) NULL,
+    [UserId] bigint NULL,
+    [UserName] nvarchar(50) NULL,
+    [UserDisplayName] nvarchar(50) NULL,
+    [EventId] int NOT NULL,
+    CONSTRAINT [PK_Log] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.329 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [dbo].[ProtectionKey] (
+    [Id] bigint NOT NULL IDENTITY,
+    [FriendlyName] nvarchar(450) NOT NULL,
+    [XmlValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_ProtectionKey] PRIMARY KEY ([Id])
+);
+2019-07-18 10:32:05.337 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [RoleClaim] (
+    [Id] int NOT NULL IDENTITY,
+    [ClaimType] nvarchar(256) NOT NULL,
+    [ClaimValue] nvarchar(max) NOT NULL,
+    [RoleId] bigint NOT NULL,
+    [ModificationDateTime] datetimeoffset NULL,
+    [ModifierBrowserName] nvarchar(1024) NULL,
+    [ModifierIp] nvarchar(256) NULL,
+    [ModifierUserId] bigint NULL,
+    CONSTRAINT [PK_RoleClaim] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_RoleClaim_Role_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [Role] ([Id]) ON DELETE CASCADE
+);
+2019-07-18 10:32:05.344 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [Permission] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(128) NOT NULL,
+    [IsGranted] bit NOT NULL,
+    [Discriminator] nvarchar(50) NOT NULL,
+    [ModificationDateTime] datetimeoffset NULL,
+    [ModifierBrowserName] nvarchar(1024) NULL,
+    [ModifierIp] nvarchar(256) NULL,
+    [ModifierUserId] bigint NULL,
+    [RoleId] bigint NULL,
+    [UserId] bigint NULL,
+    CONSTRAINT [PK_Permission] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Permission_Role_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [Role] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Permission_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);
+2019-07-18 10:32:05.352 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [UserClaim] (
+    [Id] int NOT NULL IDENTITY,
+    [ClaimType] nvarchar(256) NOT NULL,
+    [ClaimValue] nvarchar(max) NOT NULL,
+    [UserId] bigint NOT NULL,
+    [ModificationDateTime] datetimeoffset NULL,
+    [ModifierBrowserName] nvarchar(1024) NULL,
+    [ModifierIp] nvarchar(256) NULL,
+    [ModifierUserId] bigint NULL,
+    CONSTRAINT [PK_UserClaim] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserClaim_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);
+2019-07-18 10:32:05.359 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [UserRole] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] bigint NOT NULL,
+    [RoleId] bigint NOT NULL,
+    [CreationDateTime] datetimeoffset NOT NULL,
+    [CreatorBrowserName] nvarchar(1024) NULL,
+    [CreatorIp] nvarchar(256) NULL,
+    [CreatorUserId] bigint NULL,
+    CONSTRAINT [PK_UserRole] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserRole_Role_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [Role] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserRole_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);
+2019-07-18 10:32:05.366 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE TABLE [UserToken] (
+    [Id] int NOT NULL IDENTITY,
+    [TokenHash] nvarchar(256) NOT NULL,
+    [TokenExpirationDateTime] datetimeoffset NOT NULL,
+    [UserId] bigint NOT NULL,
+    CONSTRAINT [PK_UserToken] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserToken_User_UserId] FOREIGN KEY ([UserId]) REFERENCES [User] ([Id]) ON DELETE CASCADE
+);
+2019-07-18 10:32:05.373 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE UNIQUE INDEX [Blog_NormalizedTitle] ON [Blog] ([NormalizedTitle]);
+2019-07-18 10:32:05.379 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE UNIQUE INDEX [UIX_NumberedEntity_EntityName] ON [NumberedEntity] ([EntityName]);
+2019-07-18 10:32:05.386 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_Permission_Discriminator] ON [Permission] ([Discriminator]);
+2019-07-18 10:32:05.392 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_Permission_RoleId] ON [Permission] ([RoleId]);
+2019-07-18 10:32:05.399 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_Permission_UserId] ON [Permission] ([UserId]);
+2019-07-18 10:32:05.406 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE UNIQUE INDEX [UIX_Role_NormalizedName] ON [Role] ([NormalizedName]);
+2019-07-18 10:32:05.412 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_RoleClaim_RoleId] ON [RoleClaim] ([RoleId]);
+2019-07-18 10:32:05.419 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE UNIQUE INDEX [UIX_Task_NormalizedTitle] ON [Task] ([NormalizedTitle]);
+2019-07-18 10:32:05.425 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [UIX_Task_Number_BranchId] ON [Task] ([Number], [BranchId]);
+2019-07-18 10:32:05.432 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE UNIQUE INDEX [UIX_User_NormalizedDisplayName] ON [User] ([NormalizedDisplayName]);
+2019-07-18 10:32:05.439 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE UNIQUE INDEX [UIX_User_NormalizedUserName] ON [User] ([NormalizedUserName]);
+2019-07-18 10:32:05.446 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_UserClaim_UserId] ON [UserClaim] ([UserId]);
+2019-07-18 10:32:05.453 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_UserRole_RoleId] ON [UserRole] ([RoleId]);
+2019-07-18 10:32:05.460 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_UserRole_UserId] ON [UserRole] ([UserId]);
+2019-07-18 10:32:05.468 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_UserToken_AccessTokenHash] ON [UserToken] ([TokenHash]);
+2019-07-18 10:32:05.475 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_UserToken_UserId] ON [UserToken] ([UserId]);
+2019-07-18 10:32:05.482 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_Cache_ExpiresAtTime] ON [dbo].[Cache] ([ExpiresAtTime]);
+2019-07-18 10:32:05.489 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_Log_Level] ON [dbo].[Log] ([Level]);
+2019-07-18 10:32:05.497 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE INDEX [IX_Log_LoggerName] ON [dbo].[Log] ([LoggerName]);
+2019-07-18 10:32:05.504 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+CREATE UNIQUE INDEX [IX_ProtectionKey_FriendlyName] ON [dbo].[ProtectionKey] ([FriendlyName]);
+2019-07-18 10:32:05.512 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+INSERT INTO [dbo].[MigrationHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20190704125651_V2019_07_04_1726', N'2.2.6-servicing-10079');
+2019-07-18 10:32:05.616 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+SELECT TOP(1) [r].[Id], [r].[CreationDateTime], [r].[CreatorBrowserName], [r].[CreatorIp], [r].[CreatorUserId], [r].[Description], [r].[ModificationDateTime], [r].[ModifierBrowserName], [r].[ModifierIp], [r].[ModifierUserId], [r].[Name], [r].[NormalizedName], [r].[RowVersion]
+FROM [Role] AS [r]
+WHERE [r].[Name] = N'Administrators'
+ORDER BY [r].[Id]
+2019-07-18 10:32:05.650 +00:00 [Information] DNTFrameworkCore.TestAPI.Application.Common.DbSeed [0] : Seed: newPermissions: Blogs_View
+Blogs_Create
+Blogs_Edit
+Blogs_Delete
+Roles_View
+Roles_Create
+Roles_Edit
+Roles_Delete
+Users_View
+Users_Create
+Users_Edit
+Users_Delete
+Tasks_View
+Tasks_Create
+Tasks_Edit
+Tasks_Delete
+2019-07-18 10:32:05.694 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (9ms) [Parameters=[@__ToUpperInvariant_0='ADMIN' (Size = 256)], CommandType='Text', CommandTimeout='180']
+SELECT TOP(1) [u].[Id], [u].[CreationDateTime], [u].[CreatorBrowserName], [u].[CreatorIp], [u].[CreatorUserId], [u].[DisplayName], [u].[IsActive], [u].[LastLoggedInDateTime], [u].[ModificationDateTime], [u].[ModifierBrowserName], [u].[ModifierIp], [u].[ModifierUserId], [u].[NormalizedDisplayName], [u].[NormalizedUserName], [u].[PasswordHash], [u].[RowVersion], [u].[SerialNumber], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[NormalizedUserName] = @__ToUpperInvariant_0
+ORDER BY [u].[Id]
+2019-07-18 10:32:05.792 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (9ms) [Parameters=[@p0='2019-07-18T10:32:05.7689406+00:00', @p1='' (Size = 1024), @p2='' (Size = 256), @p3='' (DbType = Int64), @p4='حذف گروه کاربری پیش فرض «مدیران سیستم» باعث ایجاد اختلال در کارکرد صحیح سیستم خواهد شد.' (Size = 1024), @p5='' (DbType = DateTimeOffset), @p6='' (Size = 1024), @p7='' (Size = 256), @p8='' (DbType = Int64), @p9='Administrators' (Nullable = false) (Size = 50), @p10='ADMINISTRATORS' (Nullable = false) (Size = 50)], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+INSERT INTO [Role] ([CreationDateTime], [CreatorBrowserName], [CreatorIp], [CreatorUserId], [Description], [ModificationDateTime], [ModifierBrowserName], [ModifierIp], [ModifierUserId], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [Id], [RowVersion]
+FROM [Role]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-07-18 10:32:05.811 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (7ms) [Parameters=[@p0='2019-07-18T10:32:05.7714571+00:00', @p1='' (Size = 1024), @p2='' (Size = 256), @p3='' (DbType = Int64), @p4='مدیر سیستم' (Nullable = false) (Size = 50), @p5='True', @p6='' (DbType = DateTimeOffset), @p7='' (DbType = DateTimeOffset), @p8='' (Size = 1024), @p9='' (Size = 256), @p10='' (DbType = Int64), @p11='مدیر سیستم' (Nullable = false) (Size = 50), @p12='ADMIN' (Nullable = false) (Size = 256), @p13='AQAAAAEAACcQAAAAEI424HXEbHo+VjxwYK/4e3b318PKXYcQWXoUtVDGIrRVP0vFzGh8YgpT3F74J1twTQ==' (Nullable = false) (Size = 256), @p14='1eda4cd57ff04f9591a35b78c9d2ce7a' (Nullable = false) (Size = 128), @p15='Admin' (Nullable = false) (Size = 256)], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+INSERT INTO [User] ([CreationDateTime], [CreatorBrowserName], [CreatorIp], [CreatorUserId], [DisplayName], [IsActive], [LastLoggedInDateTime], [ModificationDateTime], [ModifierBrowserName], [ModifierIp], [ModifierUserId], [NormalizedDisplayName], [NormalizedUserName], [PasswordHash], [SerialNumber], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT [Id], [RowVersion]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-07-18 10:32:05.832 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (16ms) [Parameters=[@p16='RolePermission' (Nullable = false) (Size = 50), @p17='True', @p18='' (DbType = DateTimeOffset), @p19='' (Size = 1024), @p20='' (Size = 256), @p21='' (DbType = Int64), @p22='Blogs_View' (Nullable = false) (Size = 128), @p23='1', @p24='RolePermission' (Nullable = false) (Size = 50), @p25='True', @p26='' (DbType = DateTimeOffset), @p27='' (Size = 1024), @p28='' (Size = 256), @p29='' (DbType = Int64), @p30='Tasks_Edit' (Nullable = false) (Size = 128), @p31='1', @p32='RolePermission' (Nullable = false) (Size = 50), @p33='True', @p34='' (DbType = DateTimeOffset), @p35='' (Size = 1024), @p36='' (Size = 256), @p37='' (DbType = Int64), @p38='Tasks_Create' (Nullable = false) (Size = 128), @p39='1', @p40='RolePermission' (Nullable = false) (Size = 50), @p41='True', @p42='' (DbType = DateTimeOffset), @p43='' (Size = 1024), @p44='' (Size = 256), @p45='' (DbType = Int64), @p46='Tasks_View' (Nullable = false) (Size = 128), @p47='1', @p48='RolePermission' (Nullable = false) (Size = 50), @p49='True', @p50='' (DbType = DateTimeOffset), @p51='' (Size = 1024), @p52='' (Size = 256), @p53='' (DbType = Int64), @p54='Users_Delete' (Nullable = false) (Size = 128), @p55='1', @p56='RolePermission' (Nullable = false) (Size = 50), @p57='True', @p58='' (DbType = DateTimeOffset), @p59='' (Size = 1024), @p60='' (Size = 256), @p61='' (DbType = Int64), @p62='Users_Edit' (Nullable = false) (Size = 128), @p63='1', @p64='RolePermission' (Nullable = false) (Size = 50), @p65='True', @p66='' (DbType = DateTimeOffset), @p67='' (Size = 1024), @p68='' (Size = 256), @p69='' (DbType = Int64), @p70='Users_Create' (Nullable = false) (Size = 128), @p71='1', @p72='RolePermission' (Nullable = false) (Size = 50), @p73='True', @p74='' (DbType = DateTimeOffset), @p75='' (Size = 1024), @p76='' (Size = 256), @p77='' (DbType = Int64), @p78='Tasks_Delete' (Nullable = false) (Size = 128), @p79='1', @p80='RolePermission' (Nullable = false) (Size = 50), @p81='True', @p82='' (DbType = DateTimeOffset), @p83='' (Size = 1024), @p84='' (Size = 256), @p85='' (DbType = Int64), @p86='Users_View' (Nullable = false) (Size = 128), @p87='1', @p88='RolePermission' (Nullable = false) (Size = 50), @p89='True', @p90='' (DbType = DateTimeOffset), @p91='' (Size = 1024), @p92='' (Size = 256), @p93='' (DbType = Int64), @p94='Roles_Edit' (Nullable = false) (Size = 128), @p95='1', @p96='RolePermission' (Nullable = false) (Size = 50), @p97='True', @p98='' (DbType = DateTimeOffset), @p99='' (Size = 1024), @p100='' (Size = 256), @p101='' (DbType = Int64), @p102='Roles_Create' (Nullable = false) (Size = 128), @p103='1', @p104='RolePermission' (Nullable = false) (Size = 50), @p105='True', @p106='' (DbType = DateTimeOffset), @p107='' (Size = 1024), @p108='' (Size = 256), @p109='' (DbType = Int64), @p110='Roles_View' (Nullable = false) (Size = 128), @p111='1', @p112='RolePermission' (Nullable = false) (Size = 50), @p113='True', @p114='' (DbType = DateTimeOffset), @p115='' (Size = 1024), @p116='' (Size = 256), @p117='' (DbType = Int64), @p118='Blogs_Delete' (Nullable = false) (Size = 128), @p119='1', @p120='RolePermission' (Nullable = false) (Size = 50), @p121='True', @p122='' (DbType = DateTimeOffset), @p123='' (Size = 1024), @p124='' (Size = 256), @p125='' (DbType = Int64), @p126='Blogs_Edit' (Nullable = false) (Size = 128), @p127='1', @p128='RolePermission' (Nullable = false) (Size = 50), @p129='True', @p130='' (DbType = DateTimeOffset), @p131='' (Size = 1024), @p132='' (Size = 256), @p133='' (DbType = Int64), @p134='Blogs_Create' (Nullable = false) (Size = 128), @p135='1', @p136='RolePermission' (Nullable = false) (Size = 50), @p137='True', @p138='' (DbType = DateTimeOffset), @p139='' (Size = 1024), @p140='' (Size = 256), @p141='' (DbType = Int64), @p142='Roles_Delete' (Nullable = false) (Size = 128), @p143='1', @p144='2019-07-18T10:32:05.7720964+00:00', @p145='' (Size = 1024), @p146='' (Size = 256), @p147='' (DbType = Int64), @p148='1', @p149='1'], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permission] USING (
+VALUES (@p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, 0),
+(@p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, 1),
+(@p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, 2),
+(@p40, @p41, @p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, @p54, @p55, 4),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63, 5),
+(@p64, @p65, @p66, @p67, @p68, @p69, @p70, @p71, 6),
+(@p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79, 7),
+(@p80, @p81, @p82, @p83, @p84, @p85, @p86, @p87, 8),
+(@p88, @p89, @p90, @p91, @p92, @p93, @p94, @p95, 9),
+(@p96, @p97, @p98, @p99, @p100, @p101, @p102, @p103, 10),
+(@p104, @p105, @p106, @p107, @p108, @p109, @p110, @p111, 11),
+(@p112, @p113, @p114, @p115, @p116, @p117, @p118, @p119, 12),
+(@p120, @p121, @p122, @p123, @p124, @p125, @p126, @p127, 13),
+(@p128, @p129, @p130, @p131, @p132, @p133, @p134, @p135, 14),
+(@p136, @p137, @p138, @p139, @p140, @p141, @p142, @p143, 15)) AS i ([Discriminator], [IsGranted], [ModificationDateTime], [ModifierBrowserName], [ModifierIp], [ModifierUserId], [Name], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Discriminator], [IsGranted], [ModificationDateTime], [ModifierBrowserName], [ModifierIp], [ModifierUserId], [Name], [RoleId])
+VALUES (i.[Discriminator], i.[IsGranted], i.[ModificationDateTime], i.[ModifierBrowserName], i.[ModifierIp], i.[ModifierUserId], i.[Name], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [Permission] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+
+INSERT INTO [UserRole] ([CreationDateTime], [CreatorBrowserName], [CreatorIp], [CreatorUserId], [RoleId], [UserId])
+VALUES (@p144, @p145, @p146, @p147, @p148, @p149);
+SELECT [Id]
+FROM [UserRole]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-07-18 10:32:05.876 +00:00 [Information] DNTFrameworkCore.TestAPI.Infrastructure.Context.ProjectDbContext [0] : Migrated database associated with context ProjectDbContext
+2019-07-18 10:32:05.893 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:32:05.913 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+SELECT [k].[XmlValue]
+FROM [dbo].[ProtectionKey] AS [k]
+2019-07-18 10:32:05.921 +00:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [58] : Creating key {2039d5fb-7fff-4389-b73c-3d2cec28aef2} with creation date 2019-07-18 10:32:05Z, activation date 2019-07-18 10:32:05Z, and expiration date 2019-10-16 10:32:05Z.
+2019-07-18 10:32:05.927 +00:00 [Warning] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [35] : No XML encryptor configured. Key {2039d5fb-7fff-4389-b73c-3d2cec28aef2} may be persisted to storage in unencrypted form.
+2019-07-18 10:32:05.929 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:32:05.948 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (12ms) [Parameters=[@__friendlyName_0='key-2039d5fb-7fff-4389-b73c-3d2cec28aef2' (Size = 450)], CommandType='Text', CommandTimeout='180']
+SELECT TOP(2) [k].[Id], [k].[FriendlyName], [k].[XmlValue]
+FROM [dbo].[ProtectionKey] AS [k]
+WHERE [k].[FriendlyName] = @__friendlyName_0
+2019-07-18 10:32:05.965 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (9ms) [Parameters=[@p0='key-2039d5fb-7fff-4389-b73c-3d2cec28aef2' (Nullable = false) (Size = 450), @p1='<key id="2039d5fb-7fff-4389-b73c-3d2cec28aef2" version="1">
+  <creationDate>2019-07-18T10:32:05.9209461Z</creationDate>
+  <activationDate>2019-07-18T10:32:05.8916002Z</activationDate>
+  <expirationDate>2019-10-16T10:32:05.8916002Z</expirationDate>
+  <descriptor deserializerType="Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+    <descriptor>
+      <encryption algorithm="AES_256_CBC" />
+      <validation algorithm="HMACSHA256" />
+      <masterKey p4:requiresEncryption="true" xmlns:p4="http://schemas.asp.net/2015/03/dataProtection">
+        <!-- Warning: the key below is in an unencrypted form. -->
+        <value>dlTjIlpcbzfgonBBJN7x1GTjqOeFbS4gLNnEC1O3fmJ3KfXF6ZHDC+/yA4J2amMWvprxGrbAHRPKbc9/c5YdEg==</value>
+      </masterKey>
+    </descriptor>
+  </descriptor>
+</key>' (Size = 4000)], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ProtectionKey] ([FriendlyName], [XmlValue])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [dbo].[ProtectionKey]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-07-18 10:32:05.969 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:32:05.979 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:32:05.980 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='180']
+SELECT [k].[XmlValue]
+FROM [dbo].[ProtectionKey] AS [k]
+2019-07-18 10:32:06.021 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (28ms) [Parameters=[@p0='64395467-e4b8-4c7c-1313-08d70b6b27d8', @p1='0', @p2='Information' (Nullable = false) (Size = 50), @p3='DNTFrameworkCore.TestAPI.Application.Common.DbSeed' (Nullable = false) (Size = 256), @p4='2019-07-18 10:32:05.650 +00:00 [Information] DNTFrameworkCore.TestAPI.Application.Common.DbSeed [0] : Seed: newPermissions: Blogs_View
+Blogs_Create
+Blogs_Edit
+Blogs_Delete
+Roles_View
+Roles_Create
+Roles_Edit
+Roles_Delete
+Users_View
+Users_Create
+Users_Edit
+Users_Delete
+Tasks_View
+Tasks_Create
+Tasks_Edit
+Tasks_Delete
+' (Nullable = false) (Size = 4000), @p5='2019-07-18T10:32:05.6506091+00:00', @p6='' (Size = 1024), @p7='' (Size = 50), @p8='' (Size = 256), @p9='' (DbType = Int64), @p10='' (Size = 50)], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[Log] ([Id], [EventId], [Level], [LoggerName], [Message], [Timestamp], [UserBrowserName], [UserDisplayName], [UserIP], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2019-07-18 10:32:06.036 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (13ms) [Parameters=[@p0='0bf02205-f983-4612-1314-08d70b6b27d8', @p1='0', @p2='Information' (Nullable = false) (Size = 50), @p3='DNTFrameworkCore.TestAPI.Infrastructure.Context.ProjectDbContext' (Nullable = false) (Size = 256), @p4='2019-07-18 10:32:05.876 +00:00 [Information] DNTFrameworkCore.TestAPI.Infrastructure.Context.ProjectDbContext [0] : Migrated database associated with context ProjectDbContext
+' (Nullable = false) (Size = 4000), @p5='2019-07-18T10:32:05.8765450+00:00', @p6='' (Size = 1024), @p7='' (Size = 50), @p8='' (Size = 256), @p9='' (DbType = Int64), @p10='' (Size = 50)], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[Log] ([Id], [EventId], [Level], [LoggerName], [Message], [Timestamp], [UserBrowserName], [UserDisplayName], [UserIP], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2019-07-18 10:32:06.227 +00:00 [Information] DNTFrameworkCore.Web.Hosting.QueuedHostedService [0] : Queued Hosted Service is starting.
+2019-07-18 10:32:06.240 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger  
+2019-07-18 10:32:06.240 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger  
+2019-07-18 10:32:06.338 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 97.4851ms 0 
+2019-07-18 10:32:06.343 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 102.3881ms 301 
+2019-07-18 10:32:06.348 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger/index.html  
+2019-07-18 10:32:06.469 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 120.4103ms 200 text/html
+2019-07-18 10:32:06.495 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger/swagger-ui.css  
+2019-07-18 10:32:06.503 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger/swagger-ui-standalone-preset.js  
+2019-07-18 10:32:06.504 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger/swagger-ui-bundle.js  
+2019-07-18 10:32:06.535 +00:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [2] : Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2019-07-18 10:32:06.535 +00:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [2] : Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2019-07-18 10:32:06.541 +00:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [2] : Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2019-07-18 10:32:06.543 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 39.8001ms 200 application/javascript
+2019-07-18 10:32:06.543 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 47.9594ms 200 text/css
+2019-07-18 10:32:06.543 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 38.4679ms 200 application/javascript
+2019-07-18 10:32:07.053 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:32:07.107 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (47ms) [Parameters=[@p0='1eeb4590-370c-4624-1315-08d70b6b27d8', @p1='0', @p2='Information' (Nullable = false) (Size = 50), @p3='DNTFrameworkCore.Web.Hosting.QueuedHostedService' (Nullable = false) (Size = 256), @p4='2019-07-18 10:32:06.227 +00:00 [Information] DNTFrameworkCore.Web.Hosting.QueuedHostedService [0] : Queued Hosted Service is starting.
+' (Nullable = false) (Size = 4000), @p5='2019-07-18T10:32:06.2277262+00:00', @p6='' (Size = 1024), @p7='' (Size = 50), @p8='' (Size = 256), @p9='' (DbType = Int64), @p10='' (Size = 50)], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[Log] ([Id], [EventId], [Level], [LoggerName], [Message], [Timestamp], [UserBrowserName], [UserDisplayName], [UserIP], [UserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2019-07-18 10:32:07.563 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger/favicon-16x16.png  
+2019-07-18 10:32:07.576 +00:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [2] : Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2019-07-18 10:32:07.577 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 14.1892ms 200 image/png
+2019-07-18 10:32:07.635 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 GET https://localhost:44395/swagger/v1/swagger.json  
+2019-07-18 10:32:07.746 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 111.6285ms 200 application/json;charset=utf-8
+2019-07-18 10:32:23.542 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [1] : Request starting HTTP/2.0 POST https://localhost:44395/api/Auth/Login application/json-patch+json 49
+2019-07-18 10:32:23.546 +00:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware [ExecutingEndpoint] : Executing endpoint 'DNTFrameworkCore.TestAPI.Controllers.AuthController.Login (DNTFrameworkCore.TestAPI)'
+2019-07-18 10:32:23.570 +00:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [3] : Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(DNTFrameworkCore.TestAPI.Models.LoginModel) on controller DNTFrameworkCore.TestAPI.Controllers.AuthController (DNTFrameworkCore.TestAPI).
+2019-07-18 10:32:23.575 +00:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure [Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized] : Entity Framework Core 2.2.6-servicing-10079 initialized 'ProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled CommandTimeout=180 MigrationsHistoryTable=dbo.MigrationHistory 
+2019-07-18 10:32:23.648 +00:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [1] : Executing action method DNTFrameworkCore.TestAPI.Controllers.AuthController.Login (DNTFrameworkCore.TestAPI) - Validation state: Valid
+2019-07-18 10:32:23.691 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (25ms) [Parameters=[@__normalizedUserName_0='ADMIN' (Size = 256)], CommandType='Text', CommandTimeout='180']
+SELECT TOP(1) [x].[Id], [x].[CreationDateTime], [x].[CreatorBrowserName], [x].[CreatorIp], [x].[CreatorUserId], [x].[DisplayName], [x].[IsActive], [x].[LastLoggedInDateTime], [x].[ModificationDateTime], [x].[ModifierBrowserName], [x].[ModifierIp], [x].[ModifierUserId], [x].[NormalizedDisplayName], [x].[NormalizedUserName], [x].[PasswordHash], [x].[RowVersion], [x].[SerialNumber], [x].[UserName]
+FROM [User] AS [x]
+WHERE [x].[NormalizedUserName] = @__normalizedUserName_0
+2019-07-18 10:32:23.759 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (22ms) [Parameters=[@__userId_0='1'], CommandType='Text', CommandTimeout='180']
+SELECT TOP(1) [u].[Id], [u].[CreationDateTime], [u].[CreatorBrowserName], [u].[CreatorIp], [u].[CreatorUserId], [u].[DisplayName], [u].[IsActive], [u].[LastLoggedInDateTime], [u].[ModificationDateTime], [u].[ModifierBrowserName], [u].[ModifierIp], [u].[ModifierUserId], [u].[NormalizedDisplayName], [u].[NormalizedUserName], [u].[PasswordHash], [u].[RowVersion], [u].[SerialNumber], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+ORDER BY [u].[Id]
+2019-07-18 10:32:23.788 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (18ms) [Parameters=[@__userId_0='1'], CommandType='Text', CommandTimeout='180']
+SELECT [u.Permissions].[Id], [u.Permissions].[Discriminator], [u.Permissions].[IsGranted], [u.Permissions].[ModificationDateTime], [u.Permissions].[ModifierBrowserName], [u.Permissions].[ModifierIp], [u.Permissions].[ModifierUserId], [u.Permissions].[Name], [u.Permissions].[UserId]
+FROM [Permission] AS [u.Permissions]
+INNER JOIN (
+    SELECT TOP(1) [u0].[Id]
+    FROM [User] AS [u0]
+    WHERE [u0].[Id] = @__userId_0
+    ORDER BY [u0].[Id]
+) AS [t] ON [u.Permissions].[UserId] = [t].[Id]
+WHERE [u.Permissions].[Discriminator] = N'UserPermission'
+ORDER BY [t].[Id]
+2019-07-18 10:32:23.810 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (17ms) [Parameters=[@__userId_0='1'], CommandType='Text', CommandTimeout='180']
+SELECT [u.Claims].[Id], [u.Claims].[ClaimType], [u.Claims].[ClaimValue], [u.Claims].[ModificationDateTime], [u.Claims].[ModifierBrowserName], [u.Claims].[ModifierIp], [u.Claims].[ModifierUserId], [u.Claims].[UserId]
+FROM [UserClaim] AS [u.Claims]
+INNER JOIN (
+    SELECT TOP(1) [u1].[Id]
+    FROM [User] AS [u1]
+    WHERE [u1].[Id] = @__userId_0
+    ORDER BY [u1].[Id]
+) AS [t0] ON [u.Claims].[UserId] = [t0].[Id]
+ORDER BY [t0].[Id]
+2019-07-18 10:32:23.879 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (29ms) [Parameters=[@__userId_0='1'], CommandType='Text', CommandTimeout='180']
+SELECT [role].[Id], [role].[CreationDateTime], [role].[CreatorBrowserName], [role].[CreatorIp], [role].[CreatorUserId], [role].[Description], [role].[ModificationDateTime], [role].[ModifierBrowserName], [role].[ModifierIp], [role].[ModifierUserId], [role].[Name], [role].[NormalizedName], [role].[RowVersion]
+FROM [Role] AS [role]
+INNER JOIN [UserRole] AS [role.Users] ON [role].[Id] = [role.Users].[RoleId]
+WHERE [role.Users].[UserId] = @__userId_0
+ORDER BY [role].[Name], [role].[Id]
+2019-07-18 10:32:23.905 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (17ms) [Parameters=[@__userId_0='1'], CommandType='Text', CommandTimeout='180']
+SELECT [role.Permissions].[Id], [role.Permissions].[Discriminator], [role.Permissions].[IsGranted], [role.Permissions].[ModificationDateTime], [role.Permissions].[ModifierBrowserName], [role.Permissions].[ModifierIp], [role.Permissions].[ModifierUserId], [role.Permissions].[Name], [role.Permissions].[RoleId]
+FROM [Permission] AS [role.Permissions]
+INNER JOIN (
+    SELECT DISTINCT [role0].[Id], [role0].[Name]
+    FROM [Role] AS [role0]
+    INNER JOIN [UserRole] AS [role.Users0] ON [role0].[Id] = [role.Users0].[RoleId]
+    WHERE [role.Users0].[UserId] = @__userId_0
+) AS [t] ON [role.Permissions].[RoleId] = [t].[Id]
+WHERE [role.Permissions].[Discriminator] = N'RolePermission'
+ORDER BY [t].[Name], [t].[Id]
+2019-07-18 10:32:23.927 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (15ms) [Parameters=[@__userId_0='1'], CommandType='Text', CommandTimeout='180']
+SELECT [role.Claims].[Id], [role.Claims].[ClaimType], [role.Claims].[ClaimValue], [role.Claims].[ModificationDateTime], [role.Claims].[ModifierBrowserName], [role.Claims].[ModifierIp], [role.Claims].[ModifierUserId], [role.Claims].[RoleId]
+FROM [RoleClaim] AS [role.Claims]
+INNER JOIN (
+    SELECT DISTINCT [role1].[Id], [role1].[Name]
+    FROM [Role] AS [role1]
+    INNER JOIN [UserRole] AS [role.Users1] ON [role1].[Id] = [role.Users1].[RoleId]
+    WHERE [role.Users1].[UserId] = @__userId_0
+) AS [t0] ON [role.Claims].[RoleId] = [t0].[Id]
+ORDER BY [t0].[Name], [t0].[Id]
+2019-07-18 10:32:23.995 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (30ms) [Parameters=[@__userId_0='1'], CommandType='Text', CommandTimeout='180']
+SELECT [x].[Id], [x].[TokenExpirationDateTime], [x].[TokenHash], [x].[UserId]
+FROM [UserToken] AS [x]
+WHERE [x].[UserId] = @__userId_0
+2019-07-18 10:32:24.021 +00:00 [Information] Microsoft.EntityFrameworkCore.Database.Command [Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted] : Executed DbCommand (12ms) [Parameters=[@p0='2019-07-19T10:32:23.9549670+00:00', @p1='qA5WVFc7y1lVnspMzkXBDTCtfUGAMnbhEOXqatueVEY=' (Nullable = false) (Size = 256), @p2='1'], CommandType='Text', CommandTimeout='180']
+SET NOCOUNT ON;
+INSERT INTO [UserToken] ([TokenExpirationDateTime], [TokenHash], [UserId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [UserToken]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-07-18 10:32:24.033 +00:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [2] : Executed action method DNTFrameworkCore.TestAPI.Controllers.AuthController.Login (DNTFrameworkCore.TestAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 382.5038ms.
+2019-07-18 10:32:24.042 +00:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [1] : Executing ObjectResult, writing value of type 'DNTFrameworkCore.TestAPI.Authentication.Token'.
+2019-07-18 10:32:24.048 +00:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [2] : Executed action DNTFrameworkCore.TestAPI.Controllers.AuthController.Login (DNTFrameworkCore.TestAPI) in 475.5772ms
+2019-07-18 10:32:24.049 +00:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware [ExecutedEndpoint] : Executed endpoint 'DNTFrameworkCore.TestAPI.Controllers.AuthController.Login (DNTFrameworkCore.TestAPI)'
+2019-07-18 10:32:24.050 +00:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost [2] : Request finished in 508.738ms 200 application/json; charset=utf-8
