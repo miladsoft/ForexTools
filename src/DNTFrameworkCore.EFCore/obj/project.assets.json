@@ -4074,11 +4074,11 @@
   "project": {
     "version": "3.5.4",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj",
+      "projectUniqueName": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj",
       "projectName": "DNTFrameworkCore.EFCore",
-      "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj",
+      "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj",
       "packagesPath": "C:\\Users\\Miladsoft\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore\\obj\\",
+      "outputPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4097,8 +4097,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj": {
-              "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj"
+            "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj": {
+              "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj"
             }
           }
         }

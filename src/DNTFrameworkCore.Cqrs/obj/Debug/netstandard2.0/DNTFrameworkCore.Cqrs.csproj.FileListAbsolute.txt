@@ -34,3 +34,15 @@ E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.csproj.CopyComplete
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.dll
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\bin\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.deps.json
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\bin\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\bin\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\bin\Debug\netstandard2.0\DNTFrameworkCore.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\bin\Debug\netstandard2.0\DNTFrameworkCore.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.csprojAssemblyReference.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.csproj.CoreCompileInputs.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.AssemblyInfoInputs.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.AssemblyInfo.cs
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.csproj.CopyComplete
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Cqrs\obj\Debug\netstandard2.0\DNTFrameworkCore.Cqrs.pdb

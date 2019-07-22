@@ -4239,11 +4239,11 @@
   "project": {
     "version": "3.5.4",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Web.MultiTenancy\\DNTFrameworkCore.Web.MultiTenancy.csproj",
+      "projectUniqueName": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Web.MultiTenancy\\DNTFrameworkCore.Web.MultiTenancy.csproj",
       "projectName": "DNTFrameworkCore.Web.MultiTenancy",
-      "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Web.MultiTenancy\\DNTFrameworkCore.Web.MultiTenancy.csproj",
+      "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Web.MultiTenancy\\DNTFrameworkCore.Web.MultiTenancy.csproj",
       "packagesPath": "C:\\Users\\Miladsoft\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Web.MultiTenancy\\obj\\",
+      "outputPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Web.MultiTenancy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4262,8 +4262,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj": {
-              "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj"
+            "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj": {
+              "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore\\DNTFrameworkCore.csproj"
             }
           }
         }

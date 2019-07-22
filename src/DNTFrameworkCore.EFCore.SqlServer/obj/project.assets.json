@@ -4092,11 +4092,11 @@
   "project": {
     "version": "3.5.4",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore.SqlServer\\DNTFrameworkCore.EFCore.SqlServer.csproj",
+      "projectUniqueName": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore.SqlServer\\DNTFrameworkCore.EFCore.SqlServer.csproj",
       "projectName": "DNTFrameworkCore.EFCore.SqlServer",
-      "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore.SqlServer\\DNTFrameworkCore.EFCore.SqlServer.csproj",
+      "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore.SqlServer\\DNTFrameworkCore.EFCore.SqlServer.csproj",
       "packagesPath": "C:\\Users\\Miladsoft\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore.SqlServer\\obj\\",
+      "outputPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore.SqlServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4115,8 +4115,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj": {
-              "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj"
+            "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj": {
+              "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj"
             }
           }
         }

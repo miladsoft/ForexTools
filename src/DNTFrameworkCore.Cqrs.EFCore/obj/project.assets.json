@@ -4166,11 +4166,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Cqrs.EFCore\\DNTFrameworkCore.Cqrs.EFCore.csproj",
+      "projectUniqueName": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Cqrs.EFCore\\DNTFrameworkCore.Cqrs.EFCore.csproj",
       "projectName": "DNTFrameworkCore.Cqrs.EFCore",
-      "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Cqrs.EFCore\\DNTFrameworkCore.Cqrs.EFCore.csproj",
+      "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Cqrs.EFCore\\DNTFrameworkCore.Cqrs.EFCore.csproj",
       "packagesPath": "C:\\Users\\Miladsoft\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Cqrs.EFCore\\obj\\",
+      "outputPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Cqrs.EFCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4189,11 +4189,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Cqrs\\DNTFrameworkCore.Cqrs.csproj": {
-              "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.Cqrs\\DNTFrameworkCore.Cqrs.csproj"
+            "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Cqrs\\DNTFrameworkCore.Cqrs.csproj": {
+              "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.Cqrs\\DNTFrameworkCore.Cqrs.csproj"
             },
-            "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj": {
-              "projectPath": "E:\\Programming\\GitHub\\ForexT\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj"
+            "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj": {
+              "projectPath": "E:\\Programming\\GitHub\\ForexTools\\src\\DNTFrameworkCore.EFCore\\DNTFrameworkCore.EFCore.csproj"
             }
           }
         }

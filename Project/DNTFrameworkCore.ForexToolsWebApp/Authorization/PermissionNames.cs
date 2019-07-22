@@ -31,5 +31,11 @@ namespace DNTFrameworkCore.ForexToolsWebApp.Authorization
         public const string Invoices_Create = nameof(Invoices_Create);
         public const string Invoices_Edit = nameof(Invoices_Edit);
         public const string Invoices_Delete = nameof(Invoices_Delete);
+
+
+        public const string Person_View = nameof(Person_View);
+        public const string Person_Create = nameof(Person_Create);
+        public const string Person_Edit = nameof(Person_Edit);
+        public const string Person_Delete = nameof(Person_Delete);
     }
 }

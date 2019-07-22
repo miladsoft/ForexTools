@@ -63,6 +63,9 @@
     window.handleModalFormSucceeded = function (data, status, xhr) {
         if (xhr.getResponseHeader('Content-Type') === 'text/html; charset=utf-8') {
             prepareForm('#main-modal.modal form');
+            hideMainModal();
+
+            location.reload(); 
         } else {
             hideMainModal();
         }

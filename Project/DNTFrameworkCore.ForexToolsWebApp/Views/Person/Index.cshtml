@@ -1,0 +1,53 @@
+﻿@model IPagedQueryResult<PersonModel>
+
+@{
+    LocalizationResourceLocation = "DNTFrameworkCore.ForexToolsWebApp";
+    ViewData["Title"] = L("Administration.Views.Person.Index.Title");
+  //  ViewBag["ActiveMenu"] = AdministrationMenuNames.UserManagement;
+}
+
+<div class="row margin-bottom-5">
+    <div class="col-md-2">
+        <a class="btn btn-info" asp-modal-link asp-permission="@PermissionNames.Person_Create" asp-controller="Person" asp-action="Create">
+            <i class="fa fa-plus"></i>
+            New Person
+        </a>
+    </div>
+</div>
+
+<hr />
+
+<div class="row" id="PersonList">
+
+    @foreach (var item in Model.Items)
+    {
+        <div class="col-md-6">
+            <div class="card mb-lg-4">
+                <div class="card-header">
+                    @item.Name
+                </div>
+                <div class="card-body">
+                    <input type="text" readonly="readonly" value="@item.Family" class="form-control" />
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-light" asp-modal-link
+                       asp-controller="Person" asp-action="Edit" asp-route-id="@item.Id" asp-permission="@PermissionNames.Person_Edit">
+                        <i class="fa fa-pencil"></i>
+                        Edit
+                    </a>
+                    <a class="btn btn-light" asp-modal-delete-link asp-model-id="@item.Id"
+                       asp-controller="Person" asp-action="Delete" asp-if="!@item.IsNew()" asp-permission="@PermissionNames.Person_Delete"
+                       title="Delete Blog">
+                        <i class="fa fa-trash text-danger"></i>
+                        Delete
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+
+}

@@ -34,3 +34,15 @@ E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\D
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.csproj.CopyComplete
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.dll
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\bin\Debug\netstandard2.0\DNTFrameworkCore.Web.deps.json
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\bin\Debug\netstandard2.0\DNTFrameworkCore.Web.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\bin\Debug\netstandard2.0\DNTFrameworkCore.Web.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\bin\Debug\netstandard2.0\DNTFrameworkCore.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\bin\Debug\netstandard2.0\DNTFrameworkCore.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.csprojAssemblyReference.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.csproj.CoreCompileInputs.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.AssemblyInfoInputs.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.AssemblyInfo.cs
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.csproj.CopyComplete
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.Web\obj\Debug\netstandard2.0\DNTFrameworkCore.Web.pdb

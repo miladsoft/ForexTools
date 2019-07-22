@@ -30,6 +30,7 @@ namespace DNTFrameworkCore.ForexToolsWebApp
             services.AddApplication(Configuration);
             services.AddResources();
             services.AddWeb();
+            services.AddProgressiveWebApp();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,6 +65,7 @@ namespace DNTFrameworkCore.ForexToolsWebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

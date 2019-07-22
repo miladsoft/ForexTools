@@ -14,8 +14,10 @@
     <PackageReference Include="EFSecondLevelCache.Core" Version="2.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.0.48" />
     <PackageReference Include="Scrutor" Version="3.0.2" />
+    <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.59" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +27,10 @@
     <ProjectReference Include="..\..\src\DNTFrameworkCore.FluentValidation\DNTFrameworkCore.FluentValidation.csproj" />
     <ProjectReference Include="..\..\src\DNTFrameworkCore.Web.EFCore\DNTFrameworkCore.Web.EFCore.csproj" />
     <ProjectReference Include="..\..\src\DNTFrameworkCore.Web\DNTFrameworkCore.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>

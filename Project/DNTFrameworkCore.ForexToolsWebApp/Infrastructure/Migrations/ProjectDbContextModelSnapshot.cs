@@ -15,7 +15,7 @@ namespace DNTFrameworkCore.ForexToolsWebApp.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
+                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -60,73 +60,6 @@ namespace DNTFrameworkCore.ForexToolsWebApp.Infrastructure.Migrations
                         .HasName("IX_ProtectionKey_FriendlyName");
 
                     b.ToTable("ProtectionKey","dbo");
-                });
-
-            modelBuilder.Entity("DNTFrameworkCore.Logging.Log", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("EventId");
-
-                    b.Property<string>("Level")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
-                    b.Property<string>("LoggerName")
-                        .IsRequired()
-                        .HasMaxLength(256);
-
-                    b.Property<string>("Message")
-                        .IsRequired();
-
-                    b.Property<DateTimeOffset>("Timestamp");
-
-                    b.Property<string>("UserBrowserName")
-                        .HasMaxLength(1024);
-
-                    b.Property<string>("UserDisplayName")
-                        .HasMaxLength(50);
-
-                    b.Property<string>("UserIP")
-                        .HasMaxLength(256);
-
-                    b.Property<long?>("UserId");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(50);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Level")
-                        .HasName("IX_Log_Level");
-
-                    b.HasIndex("LoggerName")
-                        .HasName("IX_Log_LoggerName");
-
-                    b.ToTable("Log","dbo");
-                });
-
-            modelBuilder.Entity("DNTFrameworkCore.Numbering.NumberedEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("EntityName")
-                        .IsRequired()
-                        .HasMaxLength(256)
-                        .IsUnicode(false);
-
-                    b.Property<long>("NextNumber");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EntityName")
-                        .IsUnique()
-                        .HasName("UIX_NumberedEntity_EntityName");
-
-                    b.ToTable("NumberedEntity");
                 });
 
             modelBuilder.Entity("DNTFrameworkCore.ForexToolsWebApp.Domain.Blogging.Blog", b =>
@@ -473,6 +406,57 @@ namespace DNTFrameworkCore.ForexToolsWebApp.Infrastructure.Migrations
                     b.ToTable("UserRole");
                 });
 
+            modelBuilder.Entity("DNTFrameworkCore.ForexToolsWebApp.Domain.Person.Person", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTimeOffset>("CreationDateTime");
+
+                    b.Property<string>("CreatorBrowserName")
+                        .HasMaxLength(1024);
+
+                    b.Property<string>("CreatorIp")
+                        .HasMaxLength(256);
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<string>("Family");
+
+                    b.Property<DateTimeOffset?>("ModificationDateTime");
+
+                    b.Property<string>("ModifierBrowserName")
+                        .HasMaxLength(1024);
+
+                    b.Property<string>("ModifierIp")
+                        .HasMaxLength(256);
+
+                    b.Property<long?>("ModifierUserId");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<string>("NormalizedFamily");
+
+                    b.Property<string>("NormalizedName")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasName("Person_NormalizedName");
+
+                    b.ToTable("Person");
+                });
+
             modelBuilder.Entity("DNTFrameworkCore.ForexToolsWebApp.Domain.Tasks.Task", b =>
                 {
                     b.Property<int>("Id")
@@ -505,6 +489,73 @@ namespace DNTFrameworkCore.ForexToolsWebApp.Infrastructure.Migrations
                         .HasName("UIX_Task_NormalizedTitle");
 
                     b.ToTable("Task");
+                });
+
+            modelBuilder.Entity("DNTFrameworkCore.Logging.Log", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("EventId");
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<string>("LoggerName")
+                        .IsRequired()
+                        .HasMaxLength(256);
+
+                    b.Property<string>("Message")
+                        .IsRequired();
+
+                    b.Property<DateTimeOffset>("Timestamp");
+
+                    b.Property<string>("UserBrowserName")
+                        .HasMaxLength(1024);
+
+                    b.Property<string>("UserDisplayName")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("UserIP")
+                        .HasMaxLength(256);
+
+                    b.Property<long?>("UserId");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Level")
+                        .HasName("IX_Log_Level");
+
+                    b.HasIndex("LoggerName")
+                        .HasName("IX_Log_LoggerName");
+
+                    b.ToTable("Log","dbo");
+                });
+
+            modelBuilder.Entity("DNTFrameworkCore.Numbering.NumberedEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("EntityName")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .IsUnicode(false);
+
+                    b.Property<long>("NextNumber");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EntityName")
+                        .IsUnique()
+                        .HasName("UIX_NumberedEntity_EntityName");
+
+                    b.ToTable("NumberedEntity");
                 });
 
             modelBuilder.Entity("DNTFrameworkCore.ForexToolsWebApp.Domain.Identity.RolePermission", b =>

@@ -1,0 +1,17 @@
+{
+  "name": "ForexTools Application",
+  "short_name": "ForexTools",
+  "description": "The Forex Tools application",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon2.png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "/"
+}

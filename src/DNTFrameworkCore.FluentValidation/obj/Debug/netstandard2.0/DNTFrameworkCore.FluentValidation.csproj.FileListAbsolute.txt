@@ -34,3 +34,15 @@ E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.FluentValidation\obj\Debug\net
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.csproj.CopyComplete
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.dll
 E:\Programming\GitHub\ForexT\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\bin\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.deps.json
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\bin\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\bin\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\bin\Debug\netstandard2.0\DNTFrameworkCore.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\bin\Debug\netstandard2.0\DNTFrameworkCore.pdb
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.csprojAssemblyReference.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.csproj.CoreCompileInputs.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.AssemblyInfoInputs.cache
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.AssemblyInfo.cs
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.csproj.CopyComplete
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.dll
+E:\Programming\GitHub\ForexTools\src\DNTFrameworkCore.FluentValidation\obj\Debug\netstandard2.0\DNTFrameworkCore.FluentValidation.pdb

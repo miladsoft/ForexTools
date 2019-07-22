@@ -14,6 +14,7 @@ using EFSecondLevelCache.Core.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using RFrameworkCore.ForexToolsWebApp.Data.Mappings.Tasks;
+using DNTFrameworkCore.ForexToolsWebApp.Infrastructure.Mappings.PersonC;
 
 namespace DNTFrameworkCore.ForexToolsWebApp.Infrastructure.Context
 {
@@ -42,7 +43,9 @@ namespace DNTFrameworkCore.ForexToolsWebApp.Infrastructure.Context
             modelBuilder.ApplyConfiguration(new PermissionConfiguration());
             modelBuilder.ApplyConfiguration(new TaskConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new PersonConfiguration());
 
+            
             base.OnModelCreating(modelBuilder);
         }
 

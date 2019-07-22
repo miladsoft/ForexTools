@@ -61,6 +61,16 @@ namespace DNTFrameworkCore.ForexToolsWebApp.Authorization
                 L(PermissionNames.Invoices_Edit));
             yield return Permission.CreatePermission(PermissionNames.Invoices_Delete,
                 L(PermissionNames.Invoices_Delete));
+
+
+            yield return Permission.CreatePermission(PermissionNames.Person_View,
+                L(PermissionNames.Person_View));
+            yield return Permission.CreatePermission(PermissionNames.Person_Create,
+                L(PermissionNames.Person_Create));
+            yield return Permission.CreatePermission(PermissionNames.Person_Edit,
+                L(PermissionNames.Person_Edit));
+            yield return Permission.CreatePermission(PermissionNames.Person_Delete,
+                L(PermissionNames.Person_Delete));
         }
 
         private ILocalizableString L(string name)
